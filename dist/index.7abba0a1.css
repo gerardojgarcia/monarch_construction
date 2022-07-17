@@ -1,0 +1,205 @@
+@import "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --bg-clr: #f6f5f3;
+  --acc-clr: #fea269;
+  --fnt-clr: black;
+  --secondary-fnt-clr: #909090;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg-clr);
+  font-family: Space Grotesk, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: var(--bg-clr);
+  z-index: 99;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 2px 2px #0000000f;
+}
+
+nav {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  display: flex;
+}
+
+.logo {
+  height: 110px;
+  width: 110px;
+  padding-left: 10px;
+}
+
+.nav-links a {
+  color: var(--secondary-fnt-clr);
+  padding-right: 5px;
+  transition: all .5s;
+}
+
+.nav-links a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.nav-btn {
+  color: #000;
+  width: 150px;
+  padding-right: 15px;
+  transition: all .5s;
+}
+
+.nav-btn:hover {
+  color: var(--acc-clr);
+}
+
+main {
+  width: 100%;
+  flex-flow: column;
+  display: flex;
+}
+
+.hero {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.hero_title {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 100px;
+  display: flex;
+}
+
+.hero_title svg {
+  fill: var(--acc-clr);
+  margin-right: 50px;
+}
+
+h1 {
+  width: 65%;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 5rem;
+}
+
+h1 span {
+  text-decoration: underline;
+  transition: all .5s;
+}
+
+h1 span:hover {
+  color: var(--acc-clr);
+}
+
+.hero_box {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.hero_svg-side {
+  fill: var(--secondary-fnt-clr);
+  z-index: -1;
+  align-self: center;
+}
+
+.hero_img {
+  width: 850px;
+  height: 650px;
+}
+
+.hero_img img {
+  object-fit: cover;
+  width: 800px;
+  height: 600px;
+}
+
+.hero_info {
+  width: 45%;
+  flex-flow: column;
+  justify-content: center;
+  margin: 15px 15px 15px 250px;
+  font-size: 1.7rem;
+  display: flex;
+}
+
+.hero-subheader {
+  width: 75%;
+}
+
+.hero-btn {
+  margin: 75px 75px 75px 375px;
+  transition: all .5s;
+}
+
+.hero-btn:hover {
+  color: var(--acc-clr);
+}
+
+.squares {
+  width: 150px;
+  height: 50px;
+  z-index: 10;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 25px;
+  display: flex;
+}
+
+.squares svg {
+  padding: 15px;
+}
+
+#svg1 {
+  margin-left: 25px;
+}
+
+/*# sourceMappingURL=index.7abba0a1.css.map */

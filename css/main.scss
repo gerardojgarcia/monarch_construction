@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+:root {
+    --bg-clr: #f6f5f3;
+    --acc-clr: #FEA269;
+    --fnt-clr: black;
+    --secondary-fnt-clr: #909090; 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+body {
+    background-color: var(--bg-clr);
+    font-family: 'Space Grotesk', sans-serif;;
+
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin-bottom: 50px;
+    background-color: var(--bg-clr);
+    z-index: 99;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.06);
+    
+}
+
+//Navigation styles
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    
+
+}
+
+
+.logo {
+    height: 110px;
+    width: 110px;
+    padding-left: 10px;
+}
+
+.nav-links {
+
+    a {
+        color: var(--secondary-fnt-clr);
+        transition: all 500ms;
+        padding-right: 5px;
+
+        &:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+.nav-btn {
+    padding-right: 15px;
+    color: black;
+    transition: all 500ms;
+    width: 150px;
+
+    &:hover {
+        color: var(--acc-clr);
+    }
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+
+}
+
+
+// Hero Section Style
+
+.hero {
+    width: 100%;
+    margin-top: 150px;
+    
+}
+
+.hero_title {
+    display: flex;
+   
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    margin-bottom: 100px;
+    
+   svg {
+    fill: var(--acc-clr);
+    margin-right: 50px; 
+   }
+
+
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+
+    width: 65%;
+    line-height: 5rem;
+
+
+    span {
+        transition: all 500ms;
+
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--acc-clr);
+        }
+    }
+
+}
+
+.hero_box {
+    width: 100%;
+    display: flex;
+    
+    margin: 0 auto;
+    position: relative;
+
+    
+}
+
+.hero_svg-side {
+    fill: var(--secondary-fnt-clr);
+    z-index: -1;
+    align-self: center;
+
+}
+
+
+.hero_img {
+    width: 850px;
+    height: 650px;
+    
+
+    img {
+        object-fit: cover;
+        width: 800px;
+        height: 600px;
+    }
+}
+
+
+.hero_info {
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    width: 45%;
+    margin: 0 auto;
+    margin: 15px;
+    margin-left: 250px;
+    font-size: 1.7rem;
+
+   
+
+}
+
+.hero-subheader {
+    width: 75%;
+}
+
+.hero-btn {
+    margin: 75px;
+    margin-left: 375px;
+    transition: all 500ms;
+
+    &:hover {
+        color: var(--acc-clr);
+
+    }
+
+    
+}
+
+.squares {
+    display: flex;
+    flex-flow: row wrap;
+    width: 150px;
+    height: 50px;
+    z-index: 10;
+    //position: absolute;
+
+    justify-content: space-between;
+
+    align-self: center;
+
+    margin-top: 25px;   
+
+
+    svg {
+        padding: 15px;
+
+
+       
+    }
+
+
+
+  
+}
+
+#svg1 {
+    margin-left: 25px;
+}
