@@ -144,6 +144,7 @@ main {
 .hero {
     width: 100%;
     margin-top: 150px;
+    height: 100vh;
     
 }
 
@@ -299,5 +300,81 @@ h1 {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    padding-top: 150px;
+    padding-bottom: 150px;
 
+}
+
+.about_info {
+    display: flex;
+    
+    width: 100%;
+
+    justify-content: flex-end;
+
+
+}
+
+.about_info-text {
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: 75%;
+    height: 600px;
+
+    background-color: var(--secondary-fnt-clr);
+    margin-left: 125px;
+    z-index: 5;
+
+    transform: translateX(25px);
+
+
+    h2 {
+        font-size: 4.4rem;
+        padding: 75px;
+        color: var(--acc-clr);
+    }
+
+    ul {
+        padding-left: 75px;
+        padding-right: 25px;
+        width: 85%;
+        list-style-position: outside;
+        list-style-type: '- ';
+    }
+    li {
+        font-size: 1.2rem;
+        margin-right: 15px;
+
+        
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+
+        &:nth-child(1) {
+            border-bottom: 2px solid var(--bg-clr);
+        }
+    }
+
+}
+
+
+
+
+
+.about_img {
+    width: 65%;
+    height: 650px;
+    background-image: url(../img/pexels-fauxels-3184292.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    z-index: 0;
+
+    margin-top: 125px;
+}
+
+
+.about_svg-side {
+    margin-top: 575px;
+    fill: var(--acc-clr);
 }
