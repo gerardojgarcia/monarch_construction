@@ -76,13 +76,13 @@ nav {
 }
 
 .nav-links a {
-  color: var(--secondary-fnt-clr);
+  color: #000;
   padding-right: 5px;
   transition: all .5s;
 }
 
 .nav-links a:hover {
-  color: #000;
+  color: var(--acc-clr);
   text-decoration: underline;
 }
 
@@ -252,6 +252,7 @@ h1 span:hover {
 }
 
 .about_info-text li {
+  color: var(--bg-clr);
   margin-bottom: 25px;
   margin-right: 15px;
   padding-bottom: 25px;
@@ -276,6 +277,109 @@ h1 span:hover {
 .about_svg-side {
   fill: var(--acc-clr);
   margin-top: 575px;
+}
+
+.partners {
+  width: 100%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.partners strong {
+  font-size: 2.2rem;
+}
+
+.partner_logos {
+  width: 45%;
+  justify-content: center;
+  display: flex;
+}
+
+.partner_logos img {
+  width: 250px;
+  height: 250px;
+}
+
+.services {
+  width: 100%;
+  flex-flow: column;
+  display: flex;
+}
+
+.services h3 {
+  padding-bottom: 75px;
+  padding-left: 150px;
+  font-size: 4rem;
+}
+
+.services_subtitle {
+  width: 35%;
+  color: var(--secondary-fnt-clr);
+  margin-left: 150px;
+  font-size: 1.3rem;
+}
+
+.services_box {
+  width: 75%;
+  border-left: 2px solid var(--acc-clr);
+  flex-flow: column;
+  align-self: center;
+  margin-top: 100px;
+  display: flex;
+}
+
+.services_box-service {
+  flex-flow: row;
+  align-items: center;
+  display: flex;
+}
+
+.services_box-service img {
+  height: 350px;
+  width: 350px;
+  margin-left: 35px;
+}
+
+.service-details {
+  flex-flow: column;
+  margin-left: 35px;
+  display: flex;
+}
+
+.service-details strong {
+  color: var(--acc-clr);
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.service-details p {
+  width: 85%;
+  font-size: 1.3rem;
+}
+
+.services-btn {
+  flex-flow: column;
+  align-self: flex-end;
+  padding-right: 50px;
+  font-size: 3rem;
+  transition: all .5s;
+  display: flex;
+}
+
+.services-btn i {
+  align-self: flex-end;
+  transform: translateX(25px);
+}
+
+.services-btn:hover {
+  color: var(--acc-clr);
+}
+
+.values {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.7abba0a1.css.map */

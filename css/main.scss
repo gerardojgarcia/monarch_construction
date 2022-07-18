@@ -108,12 +108,12 @@ nav {
 .nav-links {
 
     a {
-        color: var(--secondary-fnt-clr);
+        color: black;
         transition: all 500ms;
         padding-right: 5px;
 
         &:hover {
-            color: black;
+            color: var(--acc-clr);
             text-decoration: underline;
         }
     }
@@ -346,6 +346,8 @@ h1 {
         font-size: 1.2rem;
         margin-right: 15px;
 
+        color: var(--bg-clr);
+
         
         margin-bottom: 25px;
         padding-bottom: 25px;
@@ -377,4 +379,147 @@ h1 {
 .about_svg-side {
     margin-top: 575px;
     fill: var(--acc-clr);
+}
+
+
+
+
+// Partners Banner
+
+
+.partners {
+    width: 100%;
+    display: flex;
+
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+
+    padding-bottom: 100px;
+     
+
+
+    strong {
+        font-size: 2.2rem;
+    }
+}
+
+
+.partner_logos {
+    display: flex;
+
+    width: 45%;
+
+    justify-content: center;
+
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+
+// Services Section
+
+.services {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+
+    h3 {
+        font-size: 4rem;
+        
+        padding-left: 150px;
+        padding-bottom: 75px;
+
+        
+    }
+
+}
+
+
+.services_subtitle {
+    margin-left: 150px;
+    width: 35%;
+    font-size: 1.3rem;
+    color: var(--secondary-fnt-clr);
+
+}
+
+
+.services_box {
+    width: 75%;
+    border-left: 2px solid var(--acc-clr);
+    
+    display: flex;
+    flex-flow: column nowrap;
+
+    align-self: center;
+    margin-top: 100px;
+
+
+
+}
+
+
+.services_box-service {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    img {
+        height: 350px;
+        width: 350px;
+        margin-left: 35px;
+    }
+}
+
+.service-details {
+    display: flex;
+   flex-flow: column nowrap;
+   margin-left: 35px;
+
+   strong {
+    font-size: 2rem;
+    color: var(--acc-clr);
+    margin-bottom: 15px;
+
+   }
+
+   p {
+    font-size: 1.3rem;
+    width: 85%;
+   }
+}
+
+.services-btn {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 3rem;
+    align-self: flex-end;
+    padding-right: 50px;
+    transition: all 500ms;
+
+    i {
+        align-self: flex-end;
+        transform: translateX(25px);
+    }
+
+    &:hover {
+        color: var(--acc-clr);
+    }
+}
+
+
+// Values Section
+
+.values {
+    width: 100%;
+    
 }
