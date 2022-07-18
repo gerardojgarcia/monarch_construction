@@ -175,12 +175,17 @@ h1 span:hover {
 }
 
 .hero-btn {
-  margin: 75px 75px 75px 375px;
+  width: auto;
+  margin: 50px 50px 50px 375px;
   transition: all .5s;
 }
 
 .hero-btn:hover {
   color: var(--acc-clr);
+}
+
+.hero-btn a {
+  width: auto;
 }
 
 .squares {
@@ -200,6 +205,16 @@ h1 span:hover {
 
 #svg1 {
   margin-left: 25px;
+}
+
+.hero_svg-side {
+  padding-bottom: 450px;
+}
+
+.about {
+  width: 100%;
+  flex-flow: column;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.7abba0a1.css.map */

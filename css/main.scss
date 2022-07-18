@@ -236,13 +236,18 @@ h1 {
 }
 
 .hero-btn {
-    margin: 75px;
+    margin: 50px;
     margin-left: 375px;
     transition: all 500ms;
+    width: auto;
 
     &:hover {
         color: var(--acc-clr);
 
+    }
+
+    a {
+        width: auto;
     }
 
     
@@ -277,4 +282,22 @@ h1 {
 
 #svg1 {
     margin-left: 25px;
+}
+
+
+.hero_svg-side {
+    padding-bottom: 450px;
+}
+
+
+
+/// About Section
+/// 
+/// 
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+
 }
