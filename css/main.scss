@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -71,7 +71,7 @@ a {
 
 body {
     background-color: var(--bg-clr);
-    font-family: 'Space Grotesk', sans-serif;;
+    font-family: 'Lato', sans-serif;
 
 }
 
@@ -222,7 +222,7 @@ h1 {
     flex-flow: column nowrap;
 
     justify-content: center;
-    width: 45%;
+    width: auto;
     margin: 0 auto;
     margin: 15px;
     margin-left: 250px;
@@ -431,6 +431,8 @@ h1 {
     display: flex;
     flex-flow: column nowrap;
 
+    padding-bottom: 100px;
+
 
     h3 {
         font-size: 4rem;
@@ -446,7 +448,7 @@ h1 {
 
 .services_subtitle {
     margin-left: 150px;
-    width: 35%;
+    width: 45%;
     font-size: 1.3rem;
     color: var(--secondary-fnt-clr);
 
@@ -474,8 +476,8 @@ h1 {
     align-items: center;
 
     img {
-        height: 350px;
-        width: 350px;
+        height: 250px;
+        width: 250px;
         margin-left: 35px;
     }
 }
@@ -521,5 +523,5 @@ h1 {
 
 .values {
     width: 100%;
-    
+
 }
