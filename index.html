@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/main.scss">
 
     <title>Monarch Construction</title>
@@ -34,8 +37,8 @@
         <!--Hero Container-->
         <section id="hero" class="hero">
 
-            <div class="hero_title">
-                <svg width="400" height="65">
+            <div class="hero_title" data-aos="fade-right" data-aos-duration="1000">
+                <svg width="400" height="65" data-aos="fade-up">
                     <rect width="400" height="150" />
                 </svg>
 
@@ -44,7 +47,7 @@
 
             <div class="hero_box">
 
-                <div class="hero_img">
+                <div class="hero_img" data-aos="fade-up" data-aos-duration="1000">
                     <img src="/img/pexels-fauxels-3184292.jpg" alt="Image of a succesful business consultation">
                 </div>
 
@@ -70,13 +73,13 @@
                     </svg>
                 </div>
                 <!--hero info   -->
-                <div class="hero_info">
+                <div class="hero_info" data-aos="fade-left">
                     <p class="hero-subheader">At Monarch, we help leading mobility and consumer tech companies to navigate the early
                         stages of innovation.</p>
 
                     <a href="/" class="hero-btn">Find out more <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <svg class="hero_svg-side" width="400" height="100">
+                <svg class="hero_svg-side" width="400" height="100" data-aos="fade-down" data-aos-duration="1000">
                     <rect width="400" height="75" />
                 </svg>
 
@@ -182,6 +185,9 @@
         <section class="values" id="values">
             <div class="values_box">
                 <div class="values_image"></div>
+                <svg width="400" height="65">
+                    <rect width="150" height="150" />
+                </svg>
                 <div class="values_info">
                     <strong>Our mission:</strong>
                     <ul>
@@ -197,21 +203,19 @@
         <!--Contact Section-->
         <section class="contact" id="contact">
             <div class="contact_box">
-                <div class="contact_box-links">
-                    <a href="">Home</a>
-                    <a href="">Services</a>
-                    <a href="">Case Studies</a>
-                    <a href="">About Us</a>
-                    <a href="">Contact</a>
-
-
-                </div>
+                
 
 
                 <div class="contact_box-info">
-                    <p class="contact_box-info-email"></p>
-                    <p class="contact_box-info-address"></p>
+                    <strong>Email</strong>
+                    <p class="contact_box-info-email">email@email.com</p>
+                    <strong>Address</strong>
+                    <p class="contact_box-info-address">1234 Main St. Los Angeles, CA</p>
                 </div>
+
+                <svg width="300" height="300">
+                    <rect width="250" height="250" />
+                </svg>
             </div>
         </section>
 
@@ -233,6 +237,9 @@
         </div>
     </footer>
     <!--scripts-->
+    <script>
+        AOS.init();
+      </script>
     <script src="./js/main.js"></script>
 </body>
 
