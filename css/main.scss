@@ -242,17 +242,38 @@ h1 {
     transition: all 500ms;
     width: auto;
 
+
+
     &:hover {
         color: var(--acc-clr);
 
-    }
 
-    a {
-        width: auto;
+        i {
+            
+            
+            transform: rotate(405deg);
+            
+            
+        }
+        
+
     }
 
     
+
+    a {
+        width: auto;
+
+
+        
+    }
+
+   
+
+    
 }
+
+
 
 .squares {
     display: flex;
@@ -476,8 +497,8 @@ h1 {
     align-items: center;
 
     img {
-        height: 250px;
-        width: 250px;
+        height: 200px;
+        width: 200px;
         margin-left: 35px;
     }
 }
@@ -541,6 +562,7 @@ h1 {
     
     align-items: center;
 
+
     svg {
         z-index: 5;
         position: absolute;
@@ -571,7 +593,7 @@ h1 {
 
     z-index: 3;
 
-    transform: translateX(-50px);
+    transform: translateX(-55px);
 
     isolation: isolate;
     position: relative;
@@ -713,5 +735,6 @@ footer {
     i {
         padding-right: 20px;
         font-size: 2rem;
+        cursor: pointer;
     }
 }
