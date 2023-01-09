@@ -415,11 +415,11 @@ h1 span:hover {
 }
 
 .values_info {
-  width: 50%;
-  height: 600px;
+  width: 35%;
   background-color: var(--secondary-fnt-clr);
   z-index: 3;
   isolation: isolate;
+  padding-bottom: 5rem;
   position: relative;
   transform: translateX(-55px);
 }
