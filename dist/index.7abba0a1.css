@@ -36,7 +36,7 @@ table {
 }
 
 :root {
-  --bg-clr: #f6f5f3;
+  --bg-clr: #fff;
   --acc-clr: #fea269;
   --fnt-clr: black;
   --secondary-fnt-clr: #909090;
@@ -154,7 +154,7 @@ h1 span:hover {
 
 .hero_img {
   width: 850px;
-  height: 650px;
+  height: 600px;
 }
 
 .hero_img img {
@@ -206,7 +206,7 @@ h1 span:hover {
 }
 
 .squares svg {
-  padding: 15px;
+  margin: 15px;
 }
 
 #svg1 {
@@ -306,6 +306,7 @@ h1 span:hover {
 .partner_logos img {
   width: 250px;
   height: 250px;
+  object-fit: contain;
 }
 
 .services {
@@ -329,7 +330,7 @@ h1 span:hover {
 }
 
 .services_box {
-  width: 75%;
+  width: 65%;
   border-left: 2px solid var(--acc-clr);
   flex-flow: column;
   align-self: center;
@@ -352,6 +353,7 @@ h1 span:hover {
 .service-details {
   flex-flow: column;
   margin-left: 35px;
+  line-height: 1.9rem;
   display: flex;
 }
 
@@ -402,9 +404,9 @@ h1 span:hover {
 .values_box svg {
   z-index: 5;
   fill: var(--acc-clr);
-  margin-bottom: 600px;
-  margin-left: 650px;
   position: absolute;
+  bottom: 600px;
+  left: 650px;
 }
 
 .values_image {
@@ -618,6 +620,10 @@ footer {
 
 .price-card-feature-list li {
   margin-bottom: 1.5rem;
+}
+
+.shadow {
+  box-shadow: 0 0 5px 2px #0000002f;
 }
 
 /*# sourceMappingURL=index.7abba0a1.css.map */
