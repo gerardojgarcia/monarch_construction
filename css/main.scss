@@ -740,3 +740,128 @@ footer {
         cursor: pointer;
     }
 }
+
+
+
+// Price - Card Styling
+
+
+
+.price-card-container {
+    display: grid;
+    place-content: center;
+
+    padding-top: 9rem;
+
+
+
+}
+
+
+.price-card-container-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.price-card-container-subtitle {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.price-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+
+}
+
+.price-card {
+    
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 375px;
+
+    border-radius: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.185);
+
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 16rem;
+    margin-right: 2rem;
+
+    transition: all 350ms;
+
+    &:hover {
+        box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.185);
+    }
+}
+
+
+
+
+.price-card-header{
+    
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+
+
+
+}
+
+
+.price-card-price {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+
+}
+
+.price-card-title {
+    font-size: 1.5rem;
+   
+ }
+
+
+.price-card-description {
+    padding-top: 2rem;
+}
+
+
+
+
+
+.price-card-btn {
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: white;
+    border: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.185);
+    
+    transition: all 350ms;
+
+
+    &:hover {
+        box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.185);
+    }
+}
+
+
+.price-card-feature-list {
+
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+
+    li {
+        margin-bottom: 1.5rem;
+    }
+}
