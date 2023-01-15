@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -71,7 +73,7 @@ a {
 
 body {
     background-color: var(--bg-clr);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -93,7 +95,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 
 
 }
@@ -353,7 +355,7 @@ h1 {
     h2 {
         font-size: 4.4rem;
         padding: 75px;
-        color: var(--acc-clr);
+        color:white;
     }
 
     ul {
@@ -387,7 +389,7 @@ h1 {
 .about_img {
     width: 65%;
     height: 650px;
-    background-image: url(../img/pexels-fauxels-3184292.jpg);
+    background-image: url(../img/MONARCH\ CONSTRUCTION_transparent.png);
     background-position: center;
     background-size: cover;
     background-repeat: none;
@@ -423,7 +425,8 @@ h1 {
 
 
     strong {
-        font-size: 2.2rem;
+        font-size: 3rem;
+        font-weight: bold;
     }
 }
 
@@ -457,7 +460,8 @@ h1 {
 
 
     h3 {
-        font-size: 4rem;
+        font-size: 3rem;
+        font-weight: bold;
 
         padding-left: 150px;
         padding-bottom: 75px;
@@ -766,11 +770,14 @@ footer {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 4rem;
+    font-weight: bold;
 }
 
 .price-card-container-subtitle {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
+
+    color:rgb(144, 144, 144);
     margin-bottom: 8rem;
 }
 
@@ -871,7 +878,117 @@ footer {
 }
 
 
+// Testimonial Style
 
+#testimonials {
+    display: grid;
+    place-items: center;
+
+}
+
+
+.testimonials_header {
+    text-align: center;
+
+    strong {
+        font-size: 5rem;
+        font-weight: bold;
+
+    }
+
+    p {
+        font-size: 1rem;
+        color:rgb(144, 144, 144);
+
+        padding-top: 1.5rem;
+    }
+}
+
+.testimonials_container {
+    display: flex;
+    flex-flow: wrap;
+
+    margin-top: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    justify-content: center;
+}
+
+.testimonial_card {
+    display: flex;
+    flex-flow: nowrap;
+
+    margin: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+
+    border: none;
+    border-radius: 1rem;
+
+
+    width: 45%;
+    
+
+
+
+
+}
+
+
+.testimonial_img-container{
+    max-height: 125px;
+    max-width: 125px;
+
+
+    margin: 1rem;
+
+
+    border-radius: 50vh;
+
+    overflow: hidden;
+
+   object-fit: cover ;
+   object-position: center;
+   
+
+        
+    
+}
+
+
+.testimonial_card-image {
+    width: 150px;
+    height: 150px;
+    
+}
+
+.testimonial_card-info {
+    display: flex;
+    flex-flow: column nowrap;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    max-width: 65%;
+}
+
+
+.testimonial_card-name {
+    margin-bottom: .5rem;
+    
+    font-size: 2rem;
+}
+
+.testimonial_card-company {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.testimonial_card-quote {
+    line-height: 1.5rem;
+}
 
 
 /// Utility Classes
@@ -884,5 +1001,14 @@ footer {
 
 .shadow {
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.185);
+
+    transition: all 250ms;
+
+    &:hover {
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.250)
+    }
     
 }
+
+
+
