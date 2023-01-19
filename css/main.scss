@@ -145,7 +145,7 @@ main {
 
 .hero {
     width: 100%;
-    margin-top: 150px;
+    padding-top: 150px;
     height: 100vh;
 
 }
@@ -323,7 +323,7 @@ h1 {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    padding-top: 150px;
+    padding-top: 1rem;
     padding-bottom: 150px;
 
 }
@@ -335,6 +335,8 @@ h1 {
 
     justify-content: flex-end;
 
+		color: black;
+
 
 }
 
@@ -342,12 +344,12 @@ h1 {
     display: flex;
     flex-flow: column nowrap;
 
-    width: 75%;
+    width: 55%;
     height: 600px;
 
-    background-color: var(--secondary-fnt-clr);
-    margin-left: 125px;
-    z-index: 5;
+    background-color: white;
+    margin-left: 135px;
+    //z-index: 5;
 
     transform: translateX(25px);
 
@@ -355,7 +357,7 @@ h1 {
     h2 {
         font-size: 4.4rem;
         padding: 75px;
-        color:white;
+        color: black;
     }
 
     ul {
@@ -369,14 +371,16 @@ h1 {
         font-size: 1.2rem;
         margin-right: 15px;
 
-        color: var(--bg-clr);
+        color: black;
+
+				line-height: 1.5rem;
 
 
         margin-bottom: 25px;
         padding-bottom: 25px;
 
         &:nth-child(1) {
-            border-bottom: 2px solid var(--bg-clr);
+            border-bottom: 2px solid black;
         }
     }
 
@@ -438,10 +442,15 @@ h1 {
 
     justify-content: center;
 
+		align-items: center;
+
+		margin-top: 2.5rem;
+
 
     img {
         width: 250px;
         height: 250px;
+				margin-right: 4rem;
         object-fit: contain;
     }
 
@@ -457,6 +466,7 @@ h1 {
     flex-flow: column nowrap;
 
     padding-bottom: 100px;
+		padding-top: 6rem;
 
 
     h3 {
@@ -552,6 +562,9 @@ h1 {
     width: 100%;
     display: flex;
 
+
+		margin-top: 10rem;
+
     flex-flow: column nowrap;
 
     justify-content: center;
@@ -583,8 +596,9 @@ h1 {
     width: 45%;
     height: 900px;
     background-image: url(../img/pexels-fauxels-3184292.jpg);
-
-
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
     z-index: 1;
 
 
@@ -595,7 +609,7 @@ h1 {
 .values_info {
     width: 35%;
     //height: 600px;
-    background-color: var(--secondary-fnt-clr);
+	color: black;
 
 		padding-bottom: 5rem;
 
@@ -606,12 +620,12 @@ h1 {
     isolation: isolate;
     position: relative;
 
-    
+
 
 
     strong {
 
-            color: var(--bg-clr);
+            color: black;
         position: absolute;
         padding: 50px;
 
@@ -625,7 +639,7 @@ h1 {
         padding-top: 250px;
         list-style: " - ";
         list-style-position: inside;
-        color: var(--bg-clr);
+        color: black;
 
 
         li {
@@ -668,28 +682,35 @@ h1 {
     width: 100%;
 
     display: flex;
-    flex-flow: column nowrap;
+    //flex-flow: column nowrap;
 
-    margin-top: 200px;
-    background-color: var(--acc-clr);
+		align-items: center;
+
+    margin-top: 5rem;
+    background-color: white;
+
+
 }
 
 .contact_box {
+
     display: flex;
 margin-top: 100px;
-    width: 100%;
 
 
-    svg {
-        margin-left: 60%;
-        margin-top: 50px;
-        position: absolute;
-        fill: var(--secondary-fnt-clr);
-    }
+		padding-left: 4rem;
+		padding-right: 4rem;
+
+justify-content:  space-between;
+
+
+align-items: center;
+
+
 }
 
 .contact_box-info {
-    width: 400px;
+    min-width: 400px;
     height: 350px;
     background-color: var(--bg-clr);
     position: relative;
@@ -700,6 +721,7 @@ margin-top: 100px;
     strong {
         font-size: 2rem;
         padding-left: 75px;
+				padding-right: 4rem;
         padding-top: 50px;
         position: absolute;
 
@@ -709,12 +731,39 @@ margin-top: 100px;
 
         font-size: 1.3rem;
         padding-left: 75px;
+				padding-right: 2rem;
         margin-top: 95px;
         text-decoration: underline;
         padding-bottom: 5px;
 
 
     }
+}
+
+
+
+.contact-title {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+
+.contact-links {
+	display: flex;
+	align-items:  center;
+}
+
+
+.contact-links-list {
+	li {
+		padding-bottom: 1.5rem;
+
+
+		&:hover {
+				color: var(--acc-clr);
+				text-decoration: underline;
+		}
+	}
 }
 
 // footer section
@@ -733,7 +782,7 @@ footer {
 .footer_container {
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
 
 }
@@ -789,7 +838,7 @@ footer {
 }
 
 .price-card {
-    
+
     display: flex;
     flex-flow: column nowrap;
     min-width: 375px;
@@ -815,7 +864,7 @@ footer {
 
 
 .price-card-header{
-    
+
     padding-left: 3rem;
     padding-right: 3rem;
 
@@ -833,7 +882,7 @@ footer {
 
 .price-card-title {
     font-size: 1.5rem;
-   
+
  }
 
 
@@ -856,7 +905,7 @@ footer {
 
     box-sizing: border-box;
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.185);
-    
+
     transition: all 350ms;
 
 
@@ -891,13 +940,13 @@ footer {
     text-align: center;
 
     strong {
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: bold;
 
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color:rgb(144, 144, 144);
 
         padding-top: 1.5rem;
@@ -929,7 +978,7 @@ footer {
 
 
     width: 45%;
-    
+
 
 
 
@@ -951,17 +1000,17 @@ footer {
 
    object-fit: cover ;
    object-position: center;
-   
 
-        
-    
+
+
+
 }
 
 
 .testimonial_card-image {
     width: 150px;
     height: 150px;
-    
+
 }
 
 .testimonial_card-info {
@@ -977,7 +1026,7 @@ footer {
 
 .testimonial_card-name {
     margin-bottom: .5rem;
-    
+
     font-size: 2rem;
 }
 
@@ -992,11 +1041,11 @@ footer {
 
 
 /// Utility Classes
-/// 
-/// 
-/// 
-/// 
-/// 
+///
+///
+///
+///
+///
 
 
 .shadow {
@@ -1007,8 +1056,5 @@ footer {
     &:hover {
         box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.250)
     }
-    
+
 }
-
-
-
